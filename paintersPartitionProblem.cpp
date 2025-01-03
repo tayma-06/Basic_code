@@ -1,3 +1,7 @@
+// Bismillahir Rahmanir Rahim
+// Author: Khadiza Sultana
+// Date: 1/4/2025
+
 #include<iostream>
 #include<vector>
 
