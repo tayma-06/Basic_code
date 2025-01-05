@@ -2,52 +2,65 @@
 // Author: Khadiza Sultana
 // Date: 1/4/2025
 
-#include<iostream>
-#include<vector>
-#include<climits>
+#include <iostream>
+#include <vector>
+#include <climits>
 
 using namespace std;
 
-bool isValid(vector<int>&arr, int n, int m, int allowed);
-int minimumTime(vector<int>&arr, int n, int m);
+bool isValid(vector<int> &arr, int n, int m, int allowed);
+int minimumTime(vector<int> &arr, int n, int m);
 
-int main() {
-    vector<int>arr = {40, 30, 10, 20};
+int main()
+{
+    vector<int> arr = {40, 30, 10, 20};
     int n = 4, m = 2;
     cout << minimumTime(arr, n, m) << endl;
     return 0;
 }
 
-bool isValid(vector<int>&arr, int n, int m, int allowed) {
+bool isValid(vector<int> &arr, int n, int m, int allowed)
+{
     int painter = 1, time = 0;
-    for (int i=0; i<n; i++) {
-        if (arr[i] > allowed) return false;
-        if (time+arr[i] <= allowed) {
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] > allowed)
+            return false;
+        if (time + arr[i] <= allowed)
+        {
             time += arr[i];
         }
-        else {
+        else
+        {
             painter++;
             time = arr[i];
         }
     }
-    if (painter > m) return false;
-    else return true;
+    if (painter > m)
+        return false;
+    else
+        return true;
 }
 
-int minimumTime(vector<int>&arr, int n, int m) {
+int minimumTime(vector<int> &arr, int n, int m)
+{
     int sum = 0, maxVal = INT_MIN;
-    for (int i=0; i<n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         sum += arr[i];
         maxVal = max(maxVal, arr[i]);
     }
     int st = maxVal, end = sum, ans = 0;
-    while (st <= end) {
-        int mid = st + (end-st)/2;
-        if (isValid(arr, n, m, mid)) {
+    while (st <= end)
+    {
+        int mid = st + (end - st) / 2;
+        if (isValid(arr, n, m, mid))
+        {
             ans = mid;
             end = mid - 1;
         }
-        else {
+        else
+        {
             st = mid + 1;
         }
     }
