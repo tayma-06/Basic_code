@@ -15,14 +15,16 @@ string reverseWords2(string s);
 int main()
 {
     string input1;
+    cout << "Before Reverse : ";
     getline(cin, input1);
     string reversed1 = reverseWords1(input1);
-    cout << reversed1 << endl;
+    cout << "After Reverse  : " << reversed1 << endl;
 
     string input2;
+     cout << "Before Reverse : ";
     getline(cin, input2);
     string reversed2 = reverseWords2(input2);
-    cout << reversed2 << endl;
+    cout << "After Reverse  : " << reversed2 << endl;
 
     return 0;
 }
