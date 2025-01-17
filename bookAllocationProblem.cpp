@@ -7,6 +7,17 @@
 
 using namespace std;
 
+bool isValid(vector<int> &arr, int n, int m, int maxAllowed);
+int allocateBooks(vector<int> &arr, int n, int m);
+
+int main()
+{
+    vector<int> arr = {20, 10, 35, 62};
+    int n = 4, m = 2;
+    cout << allocateBooks(arr, n, m) << endl;
+    return 0;
+}
+
 bool isValid(vector<int> &arr, int n, int m, int maxAllowed)
 {
     int stu = 1, pages = 0;
@@ -52,12 +63,4 @@ int allocateBooks(vector<int> &arr, int n, int m)
         }
     }
     return ans;
-}
-
-int main()
-{
-    vector<int> arr = {20, 10, 35, 62};
-    int n = 4, m = 2;
-    cout << allocateBooks(arr, n, m) << endl;
-    return 0;
 }
