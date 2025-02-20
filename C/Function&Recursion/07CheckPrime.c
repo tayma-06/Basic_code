@@ -1,7 +1,7 @@
 #include <stdio.h>
 int checkPrime(int n)
 {
-    if (n == 1 || n % 2 == 0 || n % 3 == 0)
+    if (n < 2)
         return 0;
     for (int i = 2; i * i <= n; i++)
     {
