@@ -1,12 +1,9 @@
 # Basic_code
 
-Welcome to my **Basic_code** repository! 🎉
+Welcome to the **Basic_code** repository. This repository contains a collection of my practice codes in **C**, **C++**, and **Java**. Each programming language is organized into its own folder:
 
-Here, you'll find a collection of my basic practice codes in **C** and **C++**, organized neatly into two folders:
+- **C**: Contains basic programs and experiments with the fundamental concepts of C.
+- **C++**: Includes programs related to **Data Structures and Algorithms (DSA)**, **Object-Oriented Programming (OOP)**, and other advanced C++ topics.
+- **Java**: A newly added folder where I explore **Object-Oriented Programming (OOP)** concepts and Java-specific features.
 
-- A **C** folder, where I'm diving into the fundamentals of C and experimenting with different concepts.
-- A **C++** folder, where I explore everything from **DSA**, **object-oriented programming**, to more **advanced concepts** that keep my coding journey exciting.
-
-Got any cool coding challenges for me? 😎 Feel free to ask! Or just stay tuned as I continue to add more fun and interesting programs! 🚀
-
-Happy coding! Let's make those bugs disappear. 💻✨
+Feel free to explore and check out the different coding solutions and exercises I’m working on. More programs will be added as I continue my learning journey.
