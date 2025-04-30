@@ -38,7 +38,7 @@ class Dog {
     }
 
     void checkHeight() {
-        if (height > 20) {
+        if (height > 20.0) {
             System.out.println("The dog is tall.");
         } else {
             System.out.println("The dog is of average height.");
