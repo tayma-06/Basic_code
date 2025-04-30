@@ -2,14 +2,14 @@ class Dog {
     String color;
     String eyeColor;
     double height;
-    double lenght;
+    double length;
     double weight;
 
-    Dog(String color, String eyeColor, double height, double lenght, double weight) {
+    Dog(String color, String eyeColor, double height, double length, double weight) {
         this.color = color;
         this.eyeColor = eyeColor;
         this.height = height;
-        this.lenght = lenght;
+        this.lenght = length;
         this.weight = weight;
     }
 
